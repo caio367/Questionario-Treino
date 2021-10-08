@@ -48,39 +48,25 @@ public class TreinandoApplication {
 		System.out.printf("Deseja responder as perguntas? \nDigite 'S' para SIM e 'N' para NÂO: ");
 		start = entrada.next();
 
-		
-
 		Boolean resposta;
-		//String newListPerg = String.valueOf(listaPerg);
-	
+		// String newListPerg = String.valueOf(listaPerg);
+
 		int i = 0;
 
-		if(start == "S" || start == "s"); {
-			 for( i = 0; i<listaPerg.size(); i++) 
-				 listaPerg.get(i).Escreva();	
-				 resposta = playerGenerico.VerificarResp(entrada.next());
-				 
-				 if(resposta) {
-					 questCorretas++;
-				 } while (i < listaPerg);
-		}  
-		System.out.println("Respostas corretas: " + questCorretas); 
-			 
-			
-				//Questionario qst = new Questionario(listaPerg(i));
-			
-	
+		if (start == "S" || start == "s");
+		{
+			for (i = 0; i < listaPerg.size(); i++)
+				listaPerg.get(i).Escreva();
+			resposta = playerGenerico.VerificarResp(entrada.next());
 
-		
+			if (resposta) {
+				questCorretas++;
+			}
+			System.out.println("Respostas corretas: " + questCorretas);
 
+			// Questionario qst = new Questionario(listaPerg(i));
 
-
-
-		entrada.close();
-	
-
-
-
+			entrada.close();
+		}
 	}
-
 }

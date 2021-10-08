@@ -56,11 +56,11 @@ public class Questionario {
         System.out.println("QUESTÃO " + Nquest);
         System.out.println(pergunta);
         System.out.println("-----------------------");
-        System.out.printf("( Opção A %s \n)", altA);
-        System.out.printf("( Opção B %s \n)", altB);
-        System.out.printf("( Opção C %s \n)", altC);
-        System.out.printf("( Opção D %s \n)", altD);
-        System.out.printf("Sua resposta: \n" );
+        System.out.println("( Opção A ) - "+ altA);
+        System.out.println("( Opção B ) - "+ altB);
+        System.out.println("( Opção C ) - "+ altC);
+        System.out.println("( Opção D ) - "+ altD);
+        System.out.printf("Sua resposta: " );
     }
 
     public boolean VerificarResp(String respUsuario) {
